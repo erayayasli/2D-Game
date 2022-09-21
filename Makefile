@@ -82,3 +82,7 @@ fclean: clean
 	@rm -f $(NAME)
 	@make fclean -C $(LIBFT_PATH)
 	@echo "\033[1;32mDone\n"
+	
+re: fclean all
+
+.PHONY: clean fclean all re
